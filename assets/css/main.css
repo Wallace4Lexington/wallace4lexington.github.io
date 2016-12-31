@@ -722,16 +722,16 @@ ul li.nav-link {
   .volunteer-form-body p {
     margin: 10px 0;
     font-size: 1.25em;
-    font-weight: 700;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%; }
-    .volunteer-form-body p:last-child {
-      margin-right: 0; }
+    font-weight: 700; }
     @media screen and (min-width: 1068px) {
       .volunteer-form-body p {
-        margin-left: 25.58941%; } }
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 48.82117%;
+        margin-left: 25.58941%; }
+        .volunteer-form-body p:last-child {
+          margin-right: 0; } }
     @media screen and (min-width: 321px) and (max-width: 600px) {
       .volunteer-form-body p {
         text-align: center;

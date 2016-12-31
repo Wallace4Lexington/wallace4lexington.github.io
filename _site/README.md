@@ -1,4 +1,4 @@
-Daryl Love for School Board
+Wallace for Lexington
 =============================
 
 Code for Campaign Website

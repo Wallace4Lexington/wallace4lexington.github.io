@@ -1,0 +1,44 @@
+<header role="banner">
+	<div class="header-container">
+		<div class="logo">
+			<a href="/index.html">
+				<img src="/assets/img/wallacelogowhite2.png" alt="logo" class="logoimg large">
+				<img src="/assets/img/wallacelogosmall.png" alt="small logo" class="logoimg small">
+			</a>
+	    <a href="#" id="mobile-menu-button"><i class='fa fa-2x fa-bars'></i></a>
+		</div>
+		<nav id="navbar">
+			<ul id="nav-menu" class="nav-menu show">
+				<li class="nav-link"><a href="/aboutadrian.html">meet adrian</a></li>
+				<!-- <li class="nav-link"><a href="/issues.html">issues</a></li> -->
+				<li class="nav-link"><a href="http://corrections.ky.gov/communityinfo/Pages/Restoration-of-Civil-Rights.aspx" target="_blank">voting rights restoration</a></li>
+				<li class="nav-link"><a href="https://vrsws.sos.ky.gov/ovrweb/" target="_blank">register to vote</a></li>
+				<li class="nav-link"><a href="/volunteer.html">volunteer</a></li>
+				<li class="nav-link"><a href="https://www.facebook.com/WallaceforLexington" target="_blank"><i class="fa fa-facebook"></i></a></li>
+				<li class="nav-link"><a href="https://twitter.com/AdrianDWallace" target="_blank"><i class="fa fa-twitter"></i></a></li>
+				<li class="nav-link"><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=A7YS2M275N5FG" id="donate" target="_blank">contribute</a></li>
+			</ul>
+		</nav>
+	</div>
+		<script type="text/javascript" src="/assets/js/navbarToggle.js"></script>
+		<script>
+			$(document).ready(function(){
+				$(window).scroll(function(){
+					if(window.innerWidth > 1067){
+						if ($(this).scrollTop() >= 98){
+							$('header').addClass('sticky');
+							$('.logoimg.large').css("display", "none");
+							$('.logoimg.small').css("display", "block");
+							$('#navbar').css("margin-top", "18.75px")
+						}
+						else {
+							$('header').removeClass('sticky');
+							$('.logoimg.small').css("display", "none");
+							$('.logoimg.large').css("display", "block");
+							$('#navbar').css("margin-top", "37.5px")
+						}
+					}
+				});
+			});
+		</script>
+</header>

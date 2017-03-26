@@ -1,5 +1,5 @@
-$logoWidth: 150px
-$smallLogoWidth: $logoWidth / 2
+$logoWidth: 200px
+$smallLogoWidth: 150px
 $navbarPadding: (0.5*$logoWidth)
 $headerColor: #1D2738
 
@@ -32,25 +32,13 @@ header
 
 .logo
   .logoimg
+    display: block
     float: left
-    width: $logoWidth
+    width: $smallLogoWidth
+    transition: width .25s
 
-  .logoimg.large
-    display: none
     +media($screen)
-      display: block
-
-  .logoimg.small
-    display: none
-    +media($tablet)
-      display: block
-      width: $smallLogoWidth
-    +media($mobile)
-      display: block
-      width: $smallLogoWidth
-    +media($smlphone)
-      display: block
-      width: $smallLogoWidth
+      width: $logoWidth
 
   +media($mobile)
     padding: 10px 0
@@ -132,6 +120,7 @@ ul.nav-menu
     padding: 0 15px
     font-size: 1.5em
     text-transform: uppercase
+    transition: font-size .25s, padding .25s
 
     +media($screen)
       font-size: 1em
@@ -139,6 +128,10 @@ ul.nav-menu
 
       &:hover
         color: $donate-red
+
+    +media($smlscreen)
+      font-size: .9em
+      padding: 0 5px
 
 ul li.nav-link
   position: relative

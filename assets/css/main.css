@@ -469,7 +469,7 @@ header {
 .sticky {
   background-color: #1D2738; }
   .sticky .logo img {
-    width: 75px; }
+    width: 150px; }
 
 .header-container {
   max-width: 90%;
@@ -481,29 +481,14 @@ header {
     display: table; }
 
 .logo .logoimg {
+  display: block;
   float: left;
-  width: 150px; }
-
-.logo .logoimg.large {
-  display: none; }
+  width: 150px;
+  -webkit-transition: width 0.25s;
+          transition: width 0.25s; }
   @media screen and (min-width: 1068px) {
-    .logo .logoimg.large {
-      display: block; } }
-
-.logo .logoimg.small {
-  display: none; }
-  @media screen and (min-width: 601px) and (max-width: 1067px) {
-    .logo .logoimg.small {
-      display: block;
-      width: 75px; } }
-  @media screen and (min-width: 321px) and (max-width: 600px) {
-    .logo .logoimg.small {
-      display: block;
-      width: 75px; } }
-  @media screen and (max-width: 320px) {
-    .logo .logoimg.small {
-      display: block;
-      width: 75px; } }
+    .logo .logoimg {
+      width: 200px; } }
 
 @media screen and (min-width: 321px) and (max-width: 600px) {
   .logo {
@@ -516,7 +501,7 @@ header {
 #mobile-menu-button {
   display: block;
   float: right;
-  margin-top: 18.75px; }
+  margin-top: 25px; }
   @media screen and (min-width: 1068px) {
     #mobile-menu-button {
       display: none; } }
@@ -527,7 +512,7 @@ header {
   @media screen and (min-width: 1068px) {
     #navbar {
       float: right;
-      margin-top: 37.5px; } }
+      margin-top: 50px; } }
   @media screen and (min-width: 601px) and (max-width: 1067px) {
     #navbar {
       position: relative;
@@ -584,13 +569,19 @@ ul.nav-menu {
     line-height: 32px;
     padding: 0 15px;
     font-size: 1.5em;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    -webkit-transition: font-size 0.25s, padding 0.25s;
+            transition: font-size 0.25s, padding 0.25s; }
     @media screen and (min-width: 1068px) {
       ul.nav-menu a {
         font-size: 1em;
         color: white; }
         ul.nav-menu a:hover {
           color: #be1d2c; } }
+    @media screen and (min-width: 1068px) and (max-width: 1317px) {
+      ul.nav-menu a {
+        font-size: .9em;
+        padding: 0 5px; } }
 
 ul li.nav-link {
   position: relative;

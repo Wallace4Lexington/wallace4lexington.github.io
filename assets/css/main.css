@@ -3,9 +3,7 @@
 html {
   box-sizing: border-box; }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit; }
 
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
@@ -246,7 +244,8 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"], input[type="reset"],
+html input[type="button"],
+input[type="reset"],
 input[type="submit"] {
   -webkit-appearance: button;
   /* 2 */
@@ -451,8 +450,8 @@ header {
   padding-top: 10px;
   width: 100%;
   z-index: 999999;
-  -webkit-transition: background-color 0.25s;
-          transition: background-color 0.25s; }
+  -webkit-transition: background-color .25s;
+          transition: background-color .25s; }
   @media screen and (min-width: 1068px) {
     header {
       padding: 10px 0; } }
@@ -484,8 +483,8 @@ header {
   display: block;
   float: left;
   width: 150px;
-  -webkit-transition: width 0.25s;
-          transition: width 0.25s; }
+  -webkit-transition: width .25s;
+          transition: width .25s; }
   @media screen and (min-width: 1068px) {
     .logo .logoimg {
       width: 200px; } }
@@ -570,8 +569,8 @@ ul.nav-menu {
     padding: 0 15px;
     font-size: 1.5em;
     text-transform: uppercase;
-    -webkit-transition: font-size 0.25s, padding 0.25s;
-            transition: font-size 0.25s, padding 0.25s; }
+    -webkit-transition: font-size .25s, padding .25s;
+            transition: font-size .25s, padding .25s; }
     @media screen and (min-width: 1068px) {
       ul.nav-menu a {
         font-size: 1em;
@@ -616,8 +615,8 @@ ul li.nav-link {
     #donate {
       color: white;
       background-color: transparent;
-      -webkit-transition: background-color 0.25s, color 0.25s;
-              transition: background-color 0.25s, color 0.25s; }
+      -webkit-transition: background-color .25s, color .25s;
+              transition: background-color .25s, color .25s; }
       #donate:hover {
         background-color: white;
         color: #be1d2c; } }
@@ -656,8 +655,8 @@ ul li.nav-link {
   font-size: 20px;
   background-color: #265db8;
   border: none;
-  -webkit-transition: background-color 0.15s;
-          transition: background-color 0.15s; }
+  -webkit-transition: background-color .15s;
+          transition: background-color .15s; }
   .signup-input input[type=submit]:hover {
     background-color: #1d488e;
     color: #fff; }
@@ -806,8 +805,8 @@ ul li.nav-link {
 .form-submit {
   background-color: #be1d2c;
   color: white;
-  -webkit-transition: background-color 0.15s;
-          transition: background-color 0.15s;
+  -webkit-transition: background-color .15s;
+          transition: background-color .15s;
   border: none;
   padding: 5px 10px;
   font-weight: 700; }
@@ -864,8 +863,8 @@ footer {
   .footer-links ul li a {
     text-transform: uppercase;
     color: white;
-    -webkit-transition: color 0.15s;
-            transition: color 0.15s; }
+    -webkit-transition: color .15s;
+            transition: color .15s; }
     .footer-links ul li a:hover {
       color: #00aef3; }
 
@@ -949,8 +948,8 @@ footer {
   .cta-left .cta-donate, .cta-left .cta-volunteer, .cta-left .cta-facebook {
     margin-bottom: 20px;
     padding: 10px 0;
-    -webkit-transition: background-color 0.15s;
-            transition: background-color 0.15s; }
+    -webkit-transition: background-color .15s;
+            transition: background-color .15s; }
   .cta-left .cta-donate {
     background-color: #27ae60; }
     .cta-left .cta-donate:hover {
@@ -988,8 +987,8 @@ footer {
   font-size: 1.25em;
   background-color: #265db8;
   border: none;
-  -webkit-transition: background-color 0.15s;
-          transition: background-color 0.15s; }
+  -webkit-transition: background-color .15s;
+          transition: background-color .15s; }
   .cta-right .cta-signup-input input[type=submit]:hover {
     background-color: #1d488e;
     color: #fff; }
@@ -1221,8 +1220,8 @@ footer {
     padding-right: 10px; }
   .issue-title .dropdown {
     float: right;
-    -webkit-transition: -webkit-transform 0.2s linear;
-            transition: transform 0.2s linear;
+    -webkit-transition: -webkit-transform .2s linear;
+            transition: transform .2s linear;
     line-height: inherit; }
   .issue-title .rotate {
     -webkit-transform: rotate(90deg);

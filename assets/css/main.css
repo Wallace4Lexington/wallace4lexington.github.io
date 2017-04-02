@@ -679,9 +679,9 @@ ul li.nav-link {
       width: 75%; } }
 
 .hero-image.volunteer-image {
-  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/Wallace3.jpg);
-  background-image: linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/Wallace3.jpg);
-  background-position: 0 25%; }
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/volunteer.jpg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/volunteer.jpg);
+  background-position: 0 63%; }
   @media screen and (min-width: 321px) and (max-width: 600px) {
     .hero-image.volunteer-image {
       background-position: 40% 45px; } }
@@ -1236,6 +1236,214 @@ footer {
   color: #1D2738;
   padding: 20px 0 10px 0; }
 
+.hero-image.contribute-image {
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/handshake.jpg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/handshake.jpg);
+  background-position: 0 30%; }
+  @media screen and (min-width: 601px) and (max-width: 1067px) {
+    .hero-image.contribute-image {
+      background-position: 0 20px; } }
+  @media screen and (min-width: 321px) and (max-width: 600px) {
+    .hero-image.contribute-image {
+      background-position: 40% 70px; } }
+  @media screen and (max-width: 320px) {
+    .hero-image.contribute-image {
+      background-position: 45% 50px; } }
+
+.contribute-container, .contribute-rules {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px; }
+  .contribute-container::after, .contribute-rules::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.contribute-about {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  font-size: 1.25em; }
+  .contribute-about:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 601px) and (max-width: 1067px) {
+    .contribute-about {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .contribute-about:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 321px) and (max-width: 600px) {
+    .contribute-about {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .contribute-about:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 320px) {
+    .contribute-about {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .contribute-about:last-child {
+        margin-right: 0; } }
+
+.contribute-area {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%; }
+  .contribute-area:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 601px) and (max-width: 1067px) {
+    .contribute-area {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .contribute-area:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 321px) and (max-width: 600px) {
+    .contribute-area {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .contribute-area:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 320px) {
+    .contribute-area {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%; }
+      .contribute-area:last-child {
+        margin-right: 0; } }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+.amount {
+  float: left;
+  display: block;
+  margin-right: 3.57866%;
+  width: 22.316%; }
+  .amount:last-child {
+    margin-right: 0; }
+  .amount:nth-child(4n) {
+    margin-right: 0; }
+  .amount:nth-child(4n+1) {
+    clear: left; }
+  @media screen and (min-width: 601px) and (max-width: 1067px) {
+    .amount {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 48.21067%; }
+      .amount:last-child {
+        margin-right: 0; }
+      .amount:nth-child(2n) {
+        margin-right: 0; }
+      .amount:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (min-width: 321px) and (max-width: 600px) {
+    .amount {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%; }
+      .amount:last-child {
+        margin-right: 0; }
+      .amount:nth-child(2n) {
+        margin-right: 0; }
+      .amount:nth-child(2n+1) {
+        clear: left; } }
+  @media screen and (max-width: 320px) {
+    .amount {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 46.28851%; }
+      .amount:last-child {
+        margin-right: 0; }
+      .amount:nth-child(2n) {
+        margin-right: 0; }
+      .amount:nth-child(2n+1) {
+        clear: left; } }
+
+.contribute-button {
+  display: block;
+  background-color: #265db8;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  width: 100%; }
+  .contribute-button:hover {
+    background-color: #3b75d6; }
+  .contribute-button input[type=radio] {
+    display: none; }
+
+.contribute-button.selected {
+  background-color: green; }
+
+.account-info {
+  display: none; }
+
+.account-info > input::-webkit-input-placeholder {
+  font-size: 1.25em; }
+
+.account-info > input::-moz-placeholder {
+  font-size: 1.25em; }
+
+.account-info > input:-ms-input-placeholder {
+  font-size: 1.25em; }
+
+.account-info > input::placeholder {
+  font-size: 1.25em; }
+
+.account-info > input {
+  height: 35px;
+  margin: 10px 0; }
+
+.account-info > select {
+  height: 35px;
+  font-size: 1.25em; }
+
+.account-name {
+  width: 49%; }
+
+.account-addr {
+  width: 100%; }
+
+.account-city {
+  width: 49%; }
+
+.account-state, .account-zip {
+  width: 24.5%; }
+
+.account-phone, .account-email {
+  width: 49%; }
+
+.account-employed {
+  display: block;
+  width: 100%; }
+
+.account-occupation, .account-employer {
+  width: 49%; }
+
+.card-info {
+  display: none; }
+
 .hero-image {
   background-repeat: no-repeat;
   background-size: cover;
@@ -1274,8 +1482,8 @@ footer {
       font-size: 40px; } }
 
 .hero-image.home-image {
-  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/centrepoint.jpg);
-  background-image: linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/centrepoint.jpg);
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/stadium.jpg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/stadium.jpg);
   background-position: 0 25%; }
   @media screen and (min-width: 1068px) {
     .hero-image.home-image {
@@ -1382,8 +1590,8 @@ footer {
   background-position: 70% 0; }
 
 .home-bio {
-  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/Wallace2.jpg);
-  background-image: linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/Wallace2.jpg);
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/wallacefamilystadium.jpg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.2), rgba(38, 93, 184, 0.2)), url(/assets/img/wallacefamilystadium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 27%;

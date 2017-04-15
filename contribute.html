@@ -23,6 +23,7 @@ donation rules -->
     <form class="" action="" method="post">
       <!-- Amount Choice -->
       <div class="amount-choice">
+        <p id="amount-error" style="display:none">Please choose a contribtion amount before continuing.</p>
         <ul>
           <li class="amount"><label class="contribute-button" for="amount_1000">$10<input type="radio" id="amount_1000" name="amount" value="1000"></label></li>
           <li class="amount"><label class="contribute-button" for="amount_2500">$25<input type="radio" id="amount_2500" name="amount" value="2500"></label></li>
@@ -31,9 +32,9 @@ donation rules -->
           <li class="amount"><label class="contribute-button" for="amount_25000">$250<input type="radio" id="amount_25000" name="amount" value="25000"></label></li>
           <li class="amount"><label class="contribute-button" for="amount_50000">$500<input type="radio" id="amount_50000" name="amount" value="50000"></label></li>
           <li class="amount"><label class="contribute-button" for="amount_100000">$1000<input type="radio" id="amount_100000" name="amount" value="100000"></label></li>
-          <li class="amount"><label class="contribute-button" for="amount_00">$<input type="radio" id="amount_00" name="amount" value="100000"><input type="text" id="amount_00" size="7"></label></li>
+          <li class="amount"><label class="contribute-button" for="amount_00">$<input type="radio" id="amount_00" name="amount"><input type="text" class="amount_custom" size="7"></label></li>
         </ul>
-        <button class="amount-next" type="button" name="button">Continue</button>
+        <button class="amount-next btn" type="button" name="button">Continue</button>
       </div>
       <!-- Account Information -->
       <div class="account-info">
@@ -106,11 +107,15 @@ donation rules -->
         <input class="account-zip"type="text" placeholder="Zip Code">
         <input class="account-phone"type="text" placeholder="Phone">
         <input class="account-email"type="email" placeholder="E-mail">
-        <label class="account-employed"for=""><input type="checkbox"> Check this if you are retired or not employed.</label>
-        <input class="account-occupation"type="text" placeholder="Occupation">
-        <input class="account-employer"type="text" placeholder="Employer">
-        <a href="#" class="account-back">« back</a>
-        <button class="account-next"type="button" name="button">Continue</button>
+        <label class="account-employed"for="employercheck"><input id="employercheck" class="employercheck" type="checkbox"> Check this if you are retired or not employed.</label>
+        <div class="employerfield">
+          <input class="account-occupation"type="text" placeholder="Occupation">
+          <input class="account-employer"type="text" placeholder="Employer">
+        </div>
+        <div class="button-container">
+          <button class="account-next btn"type="button" name="button">Continue</button>
+          <a href="#" class="account-back">« back</a>
+        </div>
       </div>
       <!-- Card Information -->
       <div class="card-info">
@@ -138,16 +143,41 @@ donation rules -->
 
 <script type="text/javascript">
   $(document).ready(function(){
-    var $radioButtons = $('input[type="radio"]');
+    var $radioButtons = $('input[type="radio"');
     $radioButtons.click(function(){
       $radioButtons.each(function(){
         $(this).parent().toggleClass('selected', this.checked);
       });
     });
 
+    $(".amount_custom").focus(function(){
+      if(!$("#amount_00").prop("checked")){
+        $(this).parent().addClass('selected');
+        $("#amount_00").prop("checked", true);
+      } else {
+        $("#amount_00").prop("checked", true);
+      };
+    });
+
     $(".amount-next").click(function(){
-      $(".amount-choice").toggle();
-      $(".account-info").toggle();
+      if($(".amount :input").is(":checked")){
+        if($("#amount-error").is(":visible")){
+          $("#amount-error").toggle();
+          $(".amount-choice").toggle();
+          $(".account-info").toggle();
+        } else {
+          $(".amount-choice").toggle();
+          $(".account-info").toggle();
+        }
+      } else {
+        if(!$("#amount-error").is(":visible")){
+          $("#amount-error").toggle();
+        }
+      }
+    });
+
+    $(".amount_custom").keyup(function(){
+      $('#amount_00').val($(this).val());
     });
 
     $(".account-back").click(function(e){
@@ -156,7 +186,13 @@ donation rules -->
       $(".account-info").toggle();
     });
 
+
+// if field is empty add error class and disallow toggle to continue
+
     $(".account-next").click(function(){
+      if($(".account-info :input").val().length === 0){
+        $(".account-info :input").addClass("account-error");
+      }
       $(".account-info").toggle();
       $(".card-info").toggle();
     });
@@ -167,6 +203,9 @@ donation rules -->
       $(".card-info").toggle();
     });
 
+    $(".employercheck").click(function(){
+      $(".employerfield").toggle("slow");
+    });
 
         // Create a Stripe client
     var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');

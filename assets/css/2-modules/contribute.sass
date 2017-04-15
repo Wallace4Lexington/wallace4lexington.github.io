@@ -38,6 +38,9 @@
 
 //AMOUNT INFO
 
+#amount-error
+  color: $donate-red
+
 ul
   padding: 0
   margin: 0
@@ -56,13 +59,16 @@ ul
     +span-columns(2 of 4)
     +omega(2n)
 
+.amount_custom
+  color: #333
+
 .contribute-button
   display: block
   background-color: $secondary-blue
   color: white
   cursor: pointer
   padding: 5px 10px
-  margin: 5px
+  margin-bottom: 20px
   text-align: center
   font-size: 1.5em
   font-weight: 700
@@ -77,17 +83,38 @@ ul
 .contribute-button.selected
   background-color: green
 
+.btn
+  display: block
+  margin: 0 auto
+  background-color: #27ae60
+  border: none
+  font-size: 1.5em
+  font-weight: 700
+  color: white
+  padding: 5px 10px
 
 //CONTACT INFO
 .account-info
   display: none
+
+
+.account-error
+  background-color: #ffbcbc
+  border-color: $donate-red
 
 .account-info>input::placeholder
   font-size: 1.25em
 
 .account-info>input
   height: 35px
+  margin-bottom: 20px
+
+.account-info>.employerfield>input
+  height: 35px
   margin: 10px 0
+
+.account-info>.employerfield>input::placeholder
+  font-size: 1.25em
 
 .account-info>select
   height: 35px

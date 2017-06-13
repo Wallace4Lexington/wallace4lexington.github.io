@@ -1606,8 +1606,8 @@ ul {
         margin-right: 0; } }
 
 .home-slogan-card.community {
-  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacechurch.jpg);
-  background-image: linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacechurch.jpg);
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacecommunity.jpg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacecommunity.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -1669,6 +1669,18 @@ ul {
     font-size: 1.75em; }
     .home-bio-container a:hover {
       background-color: #215f80; }
+
+.home-countdown {
+  max-width: 85.625em;
+  margin-left: auto;
+  margin-right: auto; }
+  .home-countdown::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .home-countdown iframe {
+    margin: 0 auto;
+    display: block; }
 
 .post-container {
   max-width: 85.625em;

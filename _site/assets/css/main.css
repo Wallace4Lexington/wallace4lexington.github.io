@@ -622,12 +622,21 @@ ul li.nav-link {
         color: #be1d2c; } }
 
 .signupform {
+  background-color: rgba(38, 93, 184, 0.8);
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 40.29137%; }
   .signupform:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 601px) and (max-width: 1067px) {
+    .signupform {
+      float: left;
+      display: block;
+      margin-right: 3.57866%;
+      width: 100%; }
+      .signupform:last-child {
+        margin-right: 0; } }
   @media screen and (min-width: 321px) and (max-width: 600px) {
     .signupform {
       float: left;
@@ -645,9 +654,16 @@ ul li.nav-link {
       .signupform:last-child {
         margin-right: 0; } }
 
+@media screen and (min-width: 1068px) {
+  #signup-tag {
+    padding-left: 5px; } }
+
 @media screen and (min-width: 321px) and (max-width: 600px) {
   #signup-tag {
     text-align: center; } }
+
+.signup-tag-intro {
+  padding-bottom: 20px; }
 
 .signup-input input[type=submit] {
   color: #fff;
@@ -674,9 +690,6 @@ ul li.nav-link {
   padding-left: 5px;
   font-size: 16px;
   font-weight: 700; }
-  @media screen and (min-width: 1068px) {
-    .signup-input input {
-      width: 75%; } }
 
 .hero-image.volunteer-image {
   background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/volunteer.jpg);
@@ -1483,20 +1496,12 @@ ul {
 .hero-image {
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 30em; }
+  min-height: 30em;
+  padding: 9em 0 3em 0; }
   @media screen and (min-width: 1068px) {
     .hero-image {
       padding: 24em 0 6em 0;
       background-position: top; } }
-  @media screen and (min-width: 601px) and (max-width: 1067px) {
-    .hero-image {
-      padding: 12em 0 3em 0; } }
-  @media screen and (min-width: 321px) and (max-width: 600px) {
-    .hero-image {
-      padding: 18em 0 3em 0; } }
-  @media screen and (max-width: 320px) {
-    .hero-image {
-      padding: 15em 0 3em 0; } }
 
 .hero-text {
   font-size: 5em;
@@ -1523,10 +1528,10 @@ ul {
   background-position: 44% 25%; }
   @media screen and (min-width: 1068px) {
     .hero-image.home-image {
-      padding: 15em 0 6em 0;
+      padding: 12em 0 6em 0;
       background-position: 0 25%; } }
   .hero-image.home-image .hero-text.home-hero-text {
-    font-size: 2.5em; }
+    font-size: 2em; }
     .hero-image.home-image .hero-text.home-hero-text #mc_embed_signup {
       color: #153263; }
 
@@ -1606,8 +1611,8 @@ ul {
         margin-right: 0; } }
 
 .home-slogan-card.community {
-  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacecommunity.jpg);
-  background-image: linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacecommunity.jpg);
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacechurch.jpg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.4), rgba(38, 93, 184, 0.4)), url(/assets/img/wallacechurch.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center; }
@@ -1669,18 +1674,6 @@ ul {
     font-size: 1.75em; }
     .home-bio-container a:hover {
       background-color: #215f80; }
-
-.home-countdown {
-  max-width: 85.625em;
-  margin-left: auto;
-  margin-right: auto; }
-  .home-countdown::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .home-countdown iframe {
-    margin: 0 auto;
-    display: block; }
 
 .post-container {
   max-width: 85.625em;

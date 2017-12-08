@@ -6,19 +6,11 @@
   background-repeat: no-repeat
   background-size: cover
   min-height: 30em
+  padding: 9em 0 3em 0
 
   +media($screen)
     padding: 24em 0 6em 0
     background-position: top
-
-  +media($tablet)
-    padding: 12em 0 3em 0
-
-  +media($mobile)
-    padding: 18em 0 3em 0
-
-  +media($smlphone)
-    padding: 15em 0 3em 0
 
 .hero-text
   font-size: 5em
@@ -38,11 +30,11 @@
   background-position: 44% 25%
 
   +media($screen)
-    padding: 15em 0 6em 0
+    padding: 12em 0 6em 0
     background-position: 0 25%
 
   .hero-text.home-hero-text
-    font-size: 2.5em
+    font-size: 2em
 
     #mc_embed_signup
       color: darken($secondary-blue, 20%)
@@ -92,7 +84,7 @@
 
 
 .home-slogan-card.community
-  +background-image(linear-gradient(rgba($secondary-blue, 0.4), rgba($secondary-blue, 0.4)), url(/assets/img/wallacecommunity.jpg))
+  +background-image(linear-gradient(rgba($secondary-blue, 0.4), rgba($secondary-blue, 0.4)), url(/assets/img/wallacechurch.jpg))
   background-repeat: no-repeat
   background-size: cover
   background-position: center
@@ -150,10 +142,3 @@
 
     &:hover
       background-color: darken($primary-blue, 10%)
-
-.home-countdown
-  +outer-container
-
-  iframe
-    margin: 0 auto
-    display: block

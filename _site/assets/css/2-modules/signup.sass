@@ -1,5 +1,9 @@
 .signupform
-  +span-columns(6)
+  background-color: rgba($secondary-blue, .8)
+  +span-columns(5)
+
+  +media($tablet)
+    +span-columns(8)
 
   +media($mobile)
     +span-columns(4)
@@ -8,8 +12,14 @@
     +span-columns(4)
 
 #signup-tag
+  +media($screen)
+    padding-left: 5px
+
   +media($mobile)
     text-align: center
+
+.signup-tag-intro
+  padding-bottom: 20px
 
 .signup-input
 
@@ -39,5 +49,5 @@
     font-size: 16px
     font-weight: 700
 
-    +media($screen)
-      width: 75%
+    // +media($screen)
+    //   width: 75%

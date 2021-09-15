@@ -1250,8 +1250,8 @@ footer {
   padding: 20px 0 10px 0; }
 
 .hero-image.contribute-image {
-  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/handshake.jpg);
-  background-image: linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/handshake.jpg);
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/wallacespeaking.jpeg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/wallacespeaking.jpeg);
   background-position: 0 30%; }
   @media screen and (min-width: 601px) and (max-width: 1067px) {
     .hero-image.contribute-image {
@@ -1278,7 +1278,8 @@ footer {
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
-  font-size: 1.25em; }
+  font-size: 1.5em;
+  font-weight: 700; }
   .contribute-about:last-child {
     margin-right: 0; }
   @media screen and (min-width: 601px) and (max-width: 1067px) {
@@ -1338,12 +1339,21 @@ footer {
       .contribute-area:last-child {
         margin-right: 0; } }
 
-#amount-error {
-  color: #be1d2c; }
+.contribute-rules {
+  font-size: 15px;
+  font-weight: normal; }
+  .contribute-rules p {
+    margin: 0; }
 
 ul {
   padding: 0;
   margin: 0; }
+
+#monthly {
+  font-size: 1.75em;
+  font-weight: 700;
+  color: #1d488e;
+  margin-bottom: 5px; }
 
 .amount {
   float: left;
@@ -1393,8 +1403,32 @@ ul {
       .amount:nth-child(2n+1) {
         clear: left; } }
 
-.amount_custom {
-  color: #333; }
+input[type=radio] {
+  display: none; }
+
+input[type=radio]:checked + label {
+  background-color: #1D2738; }
+
+input[type=radio]:checked + label::before {
+  font-family: "Font Awesome\ 5 Free";
+  content: "\f00c\ "; }
+
+.donationoption {
+  display: block;
+  float: left;
+  background-color: #265db8;
+  color: white;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 700;
+  width: 50%;
+  border: none;
+  border-radius: 10px; }
+  .donationoption:hover {
+    background-color: #1d488e; }
 
 .contribute-button {
   display: block;
@@ -1404,94 +1438,54 @@ ul {
   padding: 5px 10px;
   margin-bottom: 20px;
   text-align: center;
-  font-size: 1.5em;
+  font-size: 1.25em;
   font-weight: 700;
-  width: 100%; }
-  .contribute-button:hover {
-    background-color: #3b75d6; }
-  .contribute-button input[type=radio] {
-    display: none; }
-
-.contribute-button.selected {
-  background-color: green; }
-
-.btn {
-  display: block;
-  margin: 0 auto;
-  background-color: #27ae60;
+  width: 100%;
   border: none;
-  font-size: 1.5em;
-  font-weight: 700;
-  color: white;
-  padding: 5px 10px; }
+  border-radius: 10px; }
+  .contribute-button:hover {
+    background-color: #1d488e; }
 
-.account-info {
-  display: none; }
+.hero-image.sc-image {
+  background-image: -webkit-linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/wallacespeaking.jpeg);
+  background-image: linear-gradient(rgba(38, 93, 184, 0.3), rgba(38, 93, 184, 0.3)), url(/assets/img/wallacespeaking.jpeg);
+  background-position: 0 30%; }
+  @media screen and (min-width: 601px) and (max-width: 1067px) {
+    .hero-image.sc-image {
+      background-position: 0 20px; } }
+  @media screen and (min-width: 321px) and (max-width: 600px) {
+    .hero-image.sc-image {
+      background-position: 40% 70px; } }
+  @media screen and (max-width: 320px) {
+    .hero-image.sc-image {
+      background-position: 45% 50px; } }
 
-.account-error {
-  background-color: #ffbcbc;
-  border-color: #be1d2c; }
-
-.account-info > input::-webkit-input-placeholder {
-  font-size: 1.25em; }
-
-.account-info > input::-moz-placeholder {
-  font-size: 1.25em; }
-
-.account-info > input:-ms-input-placeholder {
-  font-size: 1.25em; }
-
-.account-info > input::placeholder {
-  font-size: 1.25em; }
-
-.account-info > input {
-  height: 35px;
-  margin-bottom: 20px; }
-
-.account-info > .employerfield > input {
-  height: 35px;
-  margin: 10px 0; }
-
-.account-info > .employerfield > input::-webkit-input-placeholder {
-  font-size: 1.25em; }
-
-.account-info > .employerfield > input::-moz-placeholder {
-  font-size: 1.25em; }
-
-.account-info > .employerfield > input:-ms-input-placeholder {
-  font-size: 1.25em; }
-
-.account-info > .employerfield > input::placeholder {
-  font-size: 1.25em; }
-
-.account-info > select {
-  height: 35px;
-  font-size: 1.25em; }
-
-.account-name {
-  width: 49%; }
-
-.account-addr {
-  width: 100%; }
-
-.account-city {
-  width: 49%; }
-
-.account-state, .account-zip {
-  width: 24.5%; }
-
-.account-phone, .account-email {
-  width: 49%; }
-
-.account-employed {
-  display: block;
-  width: 100%; }
-
-.account-occupation, .account-employer {
-  width: 49%; }
-
-.card-info {
-  display: none; }
+.sc-container {
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2em;
+  font-weight: 700; }
+  .sc-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .sc-container p {
+    margin: 0; }
+  .sc-container a {
+    margin-left: 10px;
+    background-color: #265db8;
+    color: white;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 700;
+    width: 100%;
+    border: none;
+    border-radius: 10px; }
+    .sc-container a:hover {
+      background-color: #1d488e; }
 
 .hero-image {
   background-repeat: no-repeat;

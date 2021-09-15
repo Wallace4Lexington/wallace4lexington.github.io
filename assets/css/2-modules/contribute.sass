@@ -1,5 +1,5 @@
 .hero-image.contribute-image
-  +background-image(linear-gradient(rgba($secondary-blue, 0.3), rgba($secondary-blue, 0.3)), url(/assets/img/handshake.jpg))
+  +background-image(linear-gradient(rgba($secondary-blue, 0.3), rgba($secondary-blue, 0.3)), url(/assets/img/wallacespeaking.jpeg))
   background-position: 0 30%
 
   +media($tablet)
@@ -17,7 +17,8 @@
 
 .contribute-about
   +span-columns(4)
-  font-size: 1.25em
+  font-size: 1.5em
+  font-weight: 700
 
   +media($tablet)
     +span-columns(8)
@@ -36,14 +37,24 @@
   +media($smlphone)
     +span-columns(4)
 
-//AMOUNT INFO
+.contribute-rules
+  font-size: 15px
+  font-weight: normal
 
-#amount-error
-  color: $donate-red
+  p
+    margin: 0
+
+//AMOUNT INFO
 
 ul
   padding: 0
   margin: 0
+
+#monthly
+  font-size: 1.75em
+  font-weight: 700
+  color: darken($secondary-blue, 10%)
+  margin-bottom: 5px
 
 .amount
   +span-columns(2 of 8)
@@ -59,8 +70,33 @@ ul
     +span-columns(2 of 4)
     +omega(2n)
 
-.amount_custom
-  color: #333
+input[type=radio]
+  display: none
+
+input[type=radio]:checked+label
+  background-color: $headerColor
+
+input[type=radio]:checked + label::before
+  font-family: "Font Awesome\ 5 Free"
+  content: "\f00c\ "
+
+.donationoption
+  display: block
+  float: left
+  background-color: $secondary-blue
+  color: white
+  cursor: pointer
+  padding: 5px 10px
+  margin-bottom: 20px
+  text-align: center
+  font-size: 1.5em
+  font-weight: 700
+  width: 50%
+  border: none
+  border-radius: 10px
+
+  &:hover
+    background-color: darken($secondary-blue, 10%)
 
 .contribute-button
   display: block
@@ -70,78 +106,48 @@ ul
   padding: 5px 10px
   margin-bottom: 20px
   text-align: center
-  font-size: 1.5em
+  font-size: 1.25em
   font-weight: 700
   width: 100%
+  border: none
+  border-radius: 10px
 
   &:hover
-    background-color: lighten($secondary-blue, 10%)
+    background-color: darken($secondary-blue, 10%)
 
-  input[type=radio]
-    display: none
 
-.contribute-button.selected
-  background-color: green
+// Success and Canceled Pages
+.hero-image.sc-image
+  +background-image(linear-gradient(rgba($secondary-blue, 0.3), rgba($secondary-blue, 0.3)), url(/assets/img/wallacespeaking.jpeg))
+  background-position: 0 30%
 
-.btn
-  display: block
-  margin: 0 auto
-  background-color: #27ae60
-  border: none
-  font-size: 1.5em
+  +media($tablet)
+    background-position: 0 20px
+
+  +media($mobile)
+    background-position: 40% 70px
+
+  +media($smlphone)
+    background-position: 45% 50px
+
+.sc-container
+  +outer-container(90%)
+  font-size: 2em
   font-weight: 700
-  color: white
-  padding: 5px 10px
+  p
+    margin: 0
+  a
+    margin-left: 10px
+    background-color: $secondary-blue
+    color: white
+    padding: 5px 10px
+    margin-bottom: 20px
+    text-align: center
+    font-size: 1.25em
+    font-weight: 700
+    width: 100%
+    border: none
+    border-radius: 10px
 
-//CONTACT INFO
-.account-info
-  display: none
-
-
-.account-error
-  background-color: #ffbcbc
-  border-color: $donate-red
-
-.account-info>input::placeholder
-  font-size: 1.25em
-
-.account-info>input
-  height: 35px
-  margin-bottom: 20px
-
-.account-info>.employerfield>input
-  height: 35px
-  margin: 10px 0
-
-.account-info>.employerfield>input::placeholder
-  font-size: 1.25em
-
-.account-info>select
-  height: 35px
-  font-size: 1.25em
-
-.account-name
-  width: 49%
-
-.account-addr
-  width: 100%
-
-.account-city
-  width: 49%
-
-.account-state, .account-zip
-  width: 24.5%
-
-.account-phone, .account-email
-  width: 49%
-
-.account-employed
-  display: block
-  width: 100%
-
-.account-occupation, .account-employer
-  width: 49%
-
-//CARD INFO
-.card-info
-  display: none
+    &:hover
+      background-color: darken($secondary-blue, 10%)
